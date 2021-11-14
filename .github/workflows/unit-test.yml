@@ -2,11 +2,16 @@ name: Unit Test (Pull Request)
 
 on:
   pull_request:
-    branches: [main]
+    # Trigger the worflow on pull request event for main branch
+    branches:
+      - main
 
 jobs:
   run-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
@@ -19,5 +24,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run Unit tests 
+    - name: Run Unit tests
       run: npm test
