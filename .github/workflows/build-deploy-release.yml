@@ -28,7 +28,7 @@ jobs:
     - name: Get Release
       id: release
       run: |
-        echo github.event.release.release
+        echo ${{ github.event.release.release }}
 
     # - name: Build, tag, and push image to Amazon ECR
     #   env:
