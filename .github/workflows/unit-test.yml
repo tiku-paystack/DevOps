@@ -1,10 +1,7 @@
 name: Unit Test [Pull Request]
 
 on:
-  pull_request:
-    # Trigger the worflow on pull request event for main branch
-    branches:
-      - main
+  pull_request
 
 jobs:
   run-test:
