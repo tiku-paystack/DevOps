@@ -1,0 +1,37 @@
+team:backend:
+- app/src/*
+- app/src/**/*
+
+team:qa:
+- app/tests/*
+- app/tests/**/*
+
+# team:docs:
+# - 
+
+# team:devops:
+# -
+
+
+# # Add 'test' label to any change to *.spec.js files within the source dir
+# test:
+# - src/**/*.spec.js
+
+# # Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
+# source:
+# - any: ['src/**/*', '!src/docs/*']
+
+# # Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
+# frontend:
+# - any: ['src/**/*.js']
+#   all: ['!src/main.js']
+
+
+# `team: backend`: Assign this label if in the PR are changes in files located in `app/src` folder
+
+# `team: qa`: Assign this label if in the PR are changes in files located in `app/tests` folder
+
+# `team: docs`: Assign this label if the file `app/README.md` has been changed
+
+# `team: devops`: Assign this label if the file `app/Dockerfile` or `app/Taskfile.yml` has been
+# changed
