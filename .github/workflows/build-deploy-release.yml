@@ -28,7 +28,7 @@ jobs:
     - name: Get Release
       id: release
       env:
-        RELEASE: ${{ github.event.release.release }}
+        RELEASE: ${{github.ref_name}}
       run: |
         echo $RELEASE
 
