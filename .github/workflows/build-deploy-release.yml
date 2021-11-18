@@ -29,8 +29,6 @@ jobs:
       id: release
       env:
         RELEASE: ${{ github.event.release.release }}
-        ECR_REPOSITORY: chainsafe
-        IMAGE_TAG: main
       run: |
         echo $RELEASE
 
