@@ -1,0 +1,14 @@
+team:backend:
+- app/src/*
+- app/src/**/*
+
+team:qa:
+- app/tests/*
+- app/tests/**/*
+
+team:docs:
+- app/README.md
+
+team:devops:
+- app/Dockerfile
+- app/Taskfile.yml
