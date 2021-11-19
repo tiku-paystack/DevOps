@@ -27,6 +27,6 @@ RUN npm install
 ## copy generated files from builder stage
 COPY --from=builder /app/dist /app/dist
 
-# EXPOSE 8080
+EXPOSE 8080
 CMD ["npm", "start"]
 
