@@ -140,6 +140,3 @@ combing everything in a single file that makes everything hard to read
 - `documentation`: please try to document all the things you are doing as possible
 - `etc`: feel free to impress us with things you usually do in your projects, we want to know the 
 way you work
-
-
-bleh
